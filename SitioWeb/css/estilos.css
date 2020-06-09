@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*El padding crezca hacia dentro*/
+}
+
+body {
+    font-family: 'Sen', sans-serif; /*Fuente sacada de fonts google api*/
+   background-color: #2A2924;
+    
+}
+
+.flechaArriba {
+    display:none;
+    padding:10px;
+    background:hsla(45, 98%, 37%, 0.459);
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.contenedor {
+    padding: 60px 0; /*espacio entre contenedores*/
+    width: 90%;
+    max-width: 1000px;
+    margin: auto; /*todo centrado*/
+    overflow: hidden; /*Lo que se quede fuera del contenedor, oculto*/
+}
+
+.titulo {
+    color: white; /*Diseño de los titulos de cada sección*/
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/********************** Cabecera *********************/
+
+header {
+    width: 100%; /*Ancho y alto y el fondo sacado de uigradients que será gradiente y pasado a hsla para tener transparencia*/
+    height: 600px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+   /* background: -webkit-linear-gradient(to right, hsla(45, 98%, 37%, 0.459), hsla(0, 0%, 0%, 0.664)), url(../img/portada.jpeg);*/
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(45, 98%, 37%, 0.459), hsla(0, 0%, 0%, 0.664)), url(../img/portada.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-attachment: fixed; /*Al hacer scroll, la imagen se mantiene, no se mueve con el contenedor*/
+    position: relative;
+}
+
+nav{ /*El nav alineado a la derecha con un padding izq y abajo*/
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+
+nav > a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    background-color: #f2e02c;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+nav > a:hover{ /*Al pasar el ratón encima le ponemos el subrayado y efecto sombreado de luz*/
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(242, 224, 44, 1);
+    transition: all 0.2s ease;
+}
+
+header .textoCabecera{ /*Se comporte según el tamaño de la pantalla*/
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 100%;
+     /*Todo centrado*/
+    align-items: center;
+    justify-content: center;
+    
+
+}
+/*Estilos al h1 y h2 que están dentro del header*/
+.textoCabecera h1{
+    font-size: 55px;
+    color:white;
+}
+
+.textoCabecera h2{
+    font-size: 35px;
+    color:white;
+}
+
+.triangulos{  /*Diseño a los triangulos superiores de la web, el cual lo pondremos en la parte de abajo con un ancho del 100%*/
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 150px; 
+}
+
+/********************** 3 Plataformas *********************/
+
+.contenedorDistintasPlataformas{
+    display: flex;
+    justify-content: space-evenly;  /*Reparte el espacio del mismo tamaño para todo*/
+}
+
+.imagen3Plataformas{
+    width: 30%;
+}
+
+.TextosDistintasPataformas{
+    width: 48%;
+}
+
+.TextosDistintasPataformas h3{
+    margin-bottom: 15px; /*Separación entre el titulo y el texto*/
+    color:white;
+}
+
+
+.TextosDistintasPataformas ul{
+    padding: 0px 0px 30px 15px;
+    list-style:none;
+     
+}
+
+.TextosDistintasPataformas p{ /*El "cuerpo"/texto que viene después*/
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    color: white;
+}
+
+
+/**********************  Capturas *********************/
+
+
+#seccionCapturas{
+    background: #44423A;
+
+}
+
+.galeriaCapturas{
+    display: flex;
+    justify-content: space-evenly; /*Separamos las imágenes*/
+    flex-wrap: wrap; 
+}
+
+.capturaIndividual{
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+   /* cursor: pointer; /*Cambiamos el cursor a una manita*/
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5); /*Sombreado y borders a cada contenedor de imagen*/
+}
+
+.capturaIndividual > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    overflow:hidden;
+}
+
+.capturaIndividual > img:hover {
+    filter: grayscale(100%);
+}
+
+
+/********************** Tarjetas *********************/
+
+#CajasDetarjetas{
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.ExteriorTarjeta{
+    background: #f2e02c;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+
+
+}
+
+.ExteriorTarjeta img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 0%;
+    display: inline-block;
+
+}
+
+.textoTarjeta{
+    width: 50%;
+    
+}
+
+.textoTarjeta h4{
+    padding: 2px;
+    
+}
+
+
+
+
+/********************** Plataformas *********************/
+
+.lasPlataformas{
+    padding: 30px 0 20px 0;
+    background-color: #44423A;
+
+     /*Espacio que hay arriba y abajo en este contenedor*/
+}   
+.plataforma{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  /*Reparte el espacio del mismo tamaño para todo*/
+}
+
+.imagen-plataforma{
+    width: 30%;
+
+}
+
+
+.textolistaPlataforma ul { /*El "cuerpo"/texto que viene después*/
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    list-style:none;
+    color: white;
+}
+
+.plataformaDescarga{
+    display: flex;
+    width: 100%;
+    border-top: yellow 1px solid;
+    justify-content: center; /*centramos*/
+    align-items: center;/*centramos*/
+     /*Se divide el contenido uno debajo de otro*/
+     padding-top: 2%;
+}
+.plataformaDescarga h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+.plataformaDescarga img{
+    width: 10%;
+    margin-left: 5%;    
+    overflow: hidden;
+    
+}
+
+
+/********************** Juega ahora *********************/
+
+main .principal-jugarweb{
+    padding: 60px 0 60px 0;
+     /*Espacio que hay arriba y abajo en este contenedor*/
+}
+.contenedor-juego{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  /*Reparte el espacio del mismo tamaño para todo*/
+    color:white;
+}
+
+
+/********************** Footer *********************/
+
+footer{
+    background: #44423A;
+    padding: 30px 0 40px 0;
+    margin: auto;
+
+}
+
+#footer {
+    display: flex;
+    width: 400px;
+    /* justify-content: space-evenly; */
+    margin: auto;
+    padding-bottom: 20px;
+    
+    
+
+    
+}
+
+.socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 4%;
+    width: 25%;
+    align-items: center;
+}
+
+.iconoFooter{
+    text-align: center;
+    width:100%;
+    
+}
+
+.iconoFooter img{
+    width:100%;
+}
+
+.nombreFooter{
+    border-top: 2px solid #ccc;
+
+}
+.nombreFooter h2{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+
+
+/************Caja Contacto**********/
+
+.cajaContacto{
+    
+    width:80%;
+
+}
+.cajaContacto h4{
+    padding: 10px;
+    color:white;
+}
+
+.formularioContacto{
+    margin:auto;
+    overflow: hidden;
+}
+
+.contactoCaja{
+    display: block;
+    width:100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    padding:10px 40px;
+    border:0;
+    background:#111;
+    outline: none;
+    color:white;
+    transition: 0.5s;
+}
+
+textarea.contactoCaja{
+    resize: none;
+    height: 100px;
+}
+
+.botonCaja{
+    float: right;
+    border:0;
+    background:#111;
+    color:#fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.idiomas{
+    
+    padding:15px;
+    text-align:center;
+
+}
+
+
+.idiomas a img{
+    width: 27px;
+    height:20px;
+    background-color:red;
+     
+}
+

@@ -1,0 +1,47 @@
+<?php
+
+$lang = array (
+	"titulo" => "Arkanoid",
+	"inicio" => "Inicio",
+	"consigueloPC" => "Consiguelo para PC",
+	"dispositivosmoviles" => "Dispositivos móviles",
+	"juegaahora" => "Juega ahora",
+	"acercade" => "Acerca de",
+	"juegaArkanoid" => "Juega a Arkanoid desde cualquier dispositivo",
+	"venceMaxima" => "Vence a la máxima puntuación",
+	"subir" => "SUBIR",
+	"distintasPlataformas" => "Distintas plataformas",
+	"En tu ordenador" => "En tu ordenador",
+	"Disponible para jugar desde tu PC, para instalar y jugar." => "Disponible para jugar desde tu PC, para instalar y jugar.",
+	"Desde móvil o tablet" => "Desde móvil o tablet",
+	"Si dispones de un móvil o tablet con Android, podrás jugar instalando nuestra APK" => "Si dispones de un móvil o tablet con Android, podrás jugar instalando nuestra APK",
+	"Desde el navegador" => "Desde el navegador",
+	"Si quieres probar ya nuestro juego, puedes hacerlo sin necesidad de descargar nada" => "Si quieres probar ya nuestro juego, puedes hacerlo sin necesidad de descargar nada",
+	"Distintos niveles" => "Distintos niveles",
+	"Opinión del jugón" => "Opinión del jugón",
+	"Carlos" => "Carlos",
+	"Es un juego muy divertido y adictivo, te mantendrá durante horas enganchado" => "Es un juego muy divertido y adictivo, te mantendrá durante horas enganchado",
+	"Raúl" => "Raúl",
+	"Es increiblemente bueno, sin duda, el mejor Arkanoid que he jugado" => "Es increiblemente bueno, sin duda, el mejor Arkanoid que he jugado",
+	"Descargar para PC" => "Descargar para PC",
+	"Sistema Operativo: Windows 7, 8 o 10 (en su versión de 64-bit)" => "Sistema Operativo: Windows 7, 8 o 10 (en su versión de 64-bit)",
+	"Procesador: Intel Core i5 @ 2.8 GHz o equivalente en AMD." => "Procesador: Intel Core i5 @ 2.8 GHz o equivalente en AMD.",
+	"Memoria: 8 GB de memoria RAM." => "Memoria: 8 GB de memoria RAM.",
+	"Tarjeta gráfica: Nvidia GeForce GTX 660 (2GB de VRAM)" => "Tarjeta gráfica: Nvidia GeForce GTX 660 (2GB de VRAM)",
+	"20GB de espacio disponible." => "20GB de espacio disponible.",
+	"DirectX: Versión 11." => "DirectX: Versión 11.",
+	"Descargar" => "Descargar",
+	"Descargar para Android" => "Descargar para Android",
+	"Android 5.0 Lollipop en adelante" => "Android 5.0 Lollipop en adelante",
+	"GPU Adreno 530, Mali-G71 MP20, Mali-G72 MP12 o superior" => "GPU Adreno 530, Mali-G71 MP20, Mali-G72 MP12 o superior",
+	"Memoria: 3 GB de memoria RAM." => "Memoria: 3 GB de memoria RAM.",
+	"Juega ahora" => "Juega ahora",
+	"Contacta con nosotros" => "Contacta con nosotros",
+	"Nombre" => "Nombre",
+	"email" => "email",
+	"Tu mensaje..." => "Tu mensaje...",
+	"Enviar" => "Enviar"
+	
+	
+	
+	);
